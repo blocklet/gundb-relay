@@ -1,9 +1,9 @@
 name: gun-relay
-title: gun-relay
-description: A Blocklet Api blocklet
+title: Gun Relay
+description: Run a GunDB Relay Server within seconds
 keywords:
-  - blocklet
-  - react
+  - database
+  - gundb
 group: dapp
 did: z8iZxhQPXE7J1717kzyH98Gw9tHE9AWjbdcro
 main: api/index.js
@@ -21,36 +21,29 @@ files:
   - README.md
   - blocklet.md
   - screenshots
-  - api/hooks/pre-start.js
 interfaces:
   - type: web
     name: publicUrl
     path: /
-    prefix: "*"
+    prefix: '*'
     port: BLOCKLET_PORT
     protocol: http
-community: ""
-documentation: ""
-homepage: ""
-license: ""
+community: ''
+documentation: ''
+homepage: ''
+license: ''
 payment:
   price: []
   share: []
 timeout:
   start: 60
 requirements:
-  server: ">=1.6.29"
-  os: "*"
-  cpu: "*"
+  server: '>=1.6.29'
+  os: '*'
+  cpu: '*'
 scripts:
-  preStart: node api/hooks/pre-start.js
   dev: npm run start
-environments:
-  - name: CHAIN_HOST
-    description: What's endpoint of the chain?
-    required: true
-    default: https://beta.abtnetwork.io/api/
-    secure: false
+environments: []
 capabilities: {}
 screenshots: []
 children: []
