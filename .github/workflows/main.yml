@@ -24,7 +24,6 @@ jobs:
       - name: Blocklet workflow
         uses: blocklet/action-workflow@v1
         with:
-          skip-deps: true
           skip-bundle: false
           skip-upload: false
           skip-deploy: true
