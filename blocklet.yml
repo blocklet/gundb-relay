@@ -1,20 +1,21 @@
 name: gun-relay
-title: Gun Relay
+version: 0.1.2
 description: Run a GunDB Relay Server within seconds
+main: api/index.js
 keywords:
   - database
   - gundb
-group: dapp
-did: z8iZxhQPXE7J1717kzyH98Gw9tHE9AWjbdcro
-main: api/index.js
 author:
   name: wangshijun
   email: wangshijun2010@gmail.com
+license: ''
+title: GunDB Relay
+group: dapp
+did: z8iZxhQPXE7J1717kzyH98Gw9tHE9AWjbdcro
 repository:
   type: git
-  url: git+https://github.com/blocklet/create-blocklet.git
-specVersion: 1.1.1
-version: 0.1.0
+  url: 'git+https://github.com/blocklet/gun-relay.git'
+specVersion: 1.2.4
 logo: logo.png
 files:
   - logo.png
@@ -31,7 +32,6 @@ interfaces:
 community: ''
 documentation: ''
 homepage: ''
-license: ''
 payment:
   price: []
   share: []
@@ -44,6 +44,8 @@ requirements:
 scripts:
   dev: npm run start
 environments: []
-capabilities: {}
+capabilities:
+  clusterMode: false
+  component: true
 screenshots: []
 children: []
