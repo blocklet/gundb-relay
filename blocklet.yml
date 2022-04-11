@@ -1,5 +1,5 @@
 name: gundb-relay
-version: 0.1.3
+version: 0.1.4
 description: Run a GunDB Relay Server within seconds
 main: api/index.js
 keywords:
