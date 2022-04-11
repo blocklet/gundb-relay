@@ -11,7 +11,11 @@ app.use(Gun.serve);
 const port = process.env.BLOCKLET_PORT || 3030;
 
 app.get('/', (req, res) => {
-  res.send(`Relay Endpoint: ${env.appUrl}/gun`);
+  const url = new URL(env.appUrl);
+  url.protocol = req.get('x-forwarded-proto') || req.protocol;
+  url.pathname = '/gun';
+
+  res.jsonp({ endpoint: url.href });
 });
 
 const server = app.listen(port, () => {
